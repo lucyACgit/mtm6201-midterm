@@ -127,7 +127,8 @@ header::before {
     content: "";
     position: absolute;
     left: -30px; 
-    width: 1200px; 
+    width: 100vw; 
+    max-width: 1200px; 
     height: 500px; 
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
@@ -281,7 +282,8 @@ header button {
     content: "";
     position: absolute;
     left: -30px; 
-    width: 1200px; 
+    width: 100vw; 
+    max-width: 1200px; 
     height: 500px; 
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
