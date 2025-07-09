@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>mtm6201 Midterm Assignment</title>
 
-    <!-- link css files -->
+    <!-- link css style and reset files -->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
    
@@ -16,33 +16,34 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-
-
 </head>
 
 <body>
+    <!-- set skip link behind all contents -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    
     <div class="wrapper">
 
     <header>
-        <div class="hero-bg">
-            <img src="images/hero-background.jpg" alt="">
+        <div class="hero-bg" role="banner">
+            <img src="images/hero-background.jpg" alt="cozy coffee shop interior with nice staff making coffee">
         </div>
         <div class="header-top">
             <div class="logo">
-                <img src="images/my-coffee-shop-logo.svg" alt="">
+                <img src="images/my-coffee-shop-logo.svg" alt="brand logo">
             </div>
-            <div class="hamburger-icon">
+            <div class="hamburger-icon" role="button" aria-label="open navigation menu">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <nav>
+            <nav aria-label="main navigation">
                 <ul>
-                    <li><a href="#">ABOUT US</a></li>
-                    <li><a href="#">MENU</a></li>
-                    <li><a href="#">LOCATIONS</a></li>
+                    <li><a href="#service">ABOUT US</a></li>
+                    <li><a href="#hero">MENU</a></li>
+                    <li><a href="#location">LOCATIONS</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="hero">
+        <div class="hero" id="hero">
             <h1>Experience coffee like never before</h1>
             <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and
                 let every visit be a chapter in your coffee story.</p>
@@ -51,53 +52,53 @@
     </header>
 
     <main>
-        <section>
+        <section id="value" aria-label="brand value proposition">
         <div class="value">
             <p class="gold">WELCOME TO MY COFFEE HOUSE</p>
             <h2>EXPERIENCE A NEW WAY TO TASTE COFFEE</h2>
         </div>
         <div class="value-img">
             <div class="value-img-left">
-                <img src="images/latte.jpeg" alt="">
+                <img src="images/latte.jpeg" alt="latte art by staff ">
             </div>
             <div class="value-img-right">
-                <img src="images/coffee-beans.jpeg" alt="">
-                <img src="images/pouring-coffee.jpeg" alt="">
-                <img src="images/three-cups.jpeg" alt="">
-                <img src="images/smiling-employee.jpeg" alt="">
+                <img src="images/coffee-beans.jpeg" alt="nice coffee beans">
+                <img src="images/pouring-coffee.jpeg" alt="staff making hand-drip coffee">
+                <img src="images/three-cups.jpeg" alt="three different coffees">
+                <img src="images/smiling-employee.jpeg" alt="friendly employee serving customer">
             </div>
         </div>
         </section>
 
-        <section>
+        <section id="service" aria-label="what services offer">
         <div class="offer">
             <p class="gold">WHAT WE OFFER</p>
             <h2>Why visit us?</h2>
         </div>
         <div class="icons">
             <div class="icon-1">
-                <img src="images/fair-trade.svg" alt="">
+                <img src="images/fair-trade.svg" alt="user-friendly icon">
                 <h3>Fair Trade Coffee</h3>
                 <p>We build direct relationships with the farmers and producers who help in the development of delicious,sustainable and organic coffee.</p>
             </div>
             <div class="icon-2">
-                <img src="images/local-baked-goods.svg" alt="">
+                <img src="images/local-baked-goods.svg" alt="user-friendly icon">
                 <h3>Local baked goods</h3>
                 <p>We use local products to bake our goods and bring in a variety of treats from local bakers with our community.
                 </p>
             </div>
             <div class="icon-3">
-                <img src="images/made-with-love.svg" alt="">
+                <img src="images/made-with-love.svg" alt="user-friendly icon">
                 <h3>Made with love</h3>
                 <p>We value our customers and make it our priority to serve everyone with respect and a friendly smile to start their day of right.</p>
             </div>
         </div>
         </section>
 
-        <section>
+        <section id="location" aria-label="information about menu and locations">
         <div class="info">
             <div class="info-img">
-                <img src="images/coffee-shop.jpeg" alt="">
+                <img src="images/coffee-shop.jpeg" alt="high angle shot inside of busy coffee shop">
             </div>
             <div class="info-text">
                 <div class="info-menu">
@@ -114,10 +115,10 @@
         </div>
         </section>
 
-        <section>
+        <section id="story" aria-label="brand story">
         <div class="story">
             <div class="story-img">
-                <img src="images/about-us.jpeg" alt="">
+                <img src="images/about-us.jpeg" alt="barista observing other staff making coffee">
             </div>
             <div class="story-text">
                 <p class="gold">ABOUT US</p>
@@ -135,7 +136,7 @@
         </div>
         </section>
 
-        <section>
+        <section id="testimonials" aria-label="customer feedbacks">
         <div class="testimonials">
             <div class="testimonial-content">
                 <div>
@@ -145,7 +146,7 @@
         
                 <div class="testimonial-cards">
                     <div class="card-1">
-                        <img src="images/testimonial-1.jpeg" alt="">
+                        <img src="images/testimonial-1.jpeg" alt="female customer">
                         <div class="testimonial-text-1">
                             <p>"I always make a point to visit My Coffee Company when in Ottawa. Delicious coffee and friendly
                                 service."</p>
@@ -154,7 +155,7 @@
                     </div>
         
                     <div class="card-2">
-                        <img src="images/testimonial-2.jpeg" alt="">
+                        <img src="images/testimonial-2.jpeg" alt="male customer">
                         <div class="testimonial-text-2">
                             <p>"Great atmosphere to get some work done while enjoying a cup or two of incredible coffee."</p>
                             <p class="gold">SCOTT S., OTTAWA</p>
@@ -162,7 +163,7 @@
                     </div>
         
                     <div class="card-3">
-                        <img src="images/testimonial-3.jpeg" alt="">
+                        <img src="images/testimonial-3.jpeg" alt="female customer">
                         <div class="testimonial-text-3">
                             <p>"Best coffee in Ottawa and the service is top notch. Would highly recommend a visit."</p>
                             <p class="gold">SUSIE F., OTTAWA</p>
@@ -174,7 +175,7 @@
         </section>
 
     </main>
-
+    </div> <!-- End of wrapper -->
 
     <footer>
         <div class="footer-content">
@@ -182,7 +183,5 @@
         </div>
     </footer>
 
-</div> <!-- End of wrapper -->
 </body>
-
 </html>
