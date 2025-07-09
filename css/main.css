@@ -134,12 +134,11 @@ header::before {
     z-index: 1;
 }
 
-
 .header-top {
     position: relative;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items:center;
     border-bottom: #ffffff 0.4px solid;
     padding-top: 10px;
     z-index: 2;  
@@ -151,6 +150,7 @@ nav ul {
 
 .hamburger-icon {
     color: var(--color-white);
+    background-color: transparent;
     position: absolute;
     right: 20px;
 }
